@@ -89,6 +89,65 @@
     </div>
     <!--End Light Box-->
 
+ <!-- Start sign in section -->
+ <span class="d-none" id="username"></span>
+
+ <div class="container">
+         <div class=" w-75  my-5 mx-auto py-3">
+             <h1 class="text-center text-info pt-3">Smart Login System</h1>
+             <input id="email" type="text" class="form-control w-100 my-4 mx-auto"  placeholder="Enter Your Email">
+             <input id="password" type="password" class="form-control w-100 my-4 mx-auto" placeholder="Enter Your Password">
+             <p id="incorrect"></p>
+
+
+             <button class="btn btn-outline-info w-100" onclick="logIn()">Log in</button>
+             <p class="text-white text-center my-2 py-2">Don’t have an account? 
+                 <a href="sign up.html" class="text-white">Sign Up</a>
+             </p>
+         </div>
+ </div>
+ <!-- End sign in section -->
+
+    <!-- Start Sign up section -->
+    <span class="d-none" id="username"></span>
+
+    <div class="container">
+            <div class=" w-75  my-5 mx-auto py-3">
+                <h1 class="text-center text-info pt-3">Smart Login System</h1>
+                <input id="userName" type="text" class="form-control w-100 my-4 mx-auto"  placeholder="Enter Your Name">
+                <input id="signEmail" type="text" class="form-control w-100 my-4 mx-auto"  placeholder="Enter Your Email">
+                <input id="signPass" type="password" class="form-control w-100 my-4 mx-auto" placeholder="Enter Your Password">
+                
+                <p id="reqInp"></p>
+                
+                <button class="btn btn-outline-info w-100" onclick="addAccount()">Sign Up</button>
+                <p class="text-white text-center my-2 py-2">You have an account? 
+                    <a href="sign in.html" class="text-white">Signin</a>
+                </p>
+            </div>
+    </div>
+    <!-- End Sign up section -->
+
+       <!-- Start Welcome section -->
+       <nav class="navbar navbar-expand-lg navbar-dark group">
+        <div class="container">
+            <a class="navbar-brand" href="#">SMART LOGIN</a>
+            <a onclick="logOut()" class="nav-link ml-auto btn btn-outline-warning " href="sign in.html">Logout</a>
+        </div>
+    </nav>
+
+        <div class="container text-center col-md-9 h-75 m-auto d-flex justify-content-center align-items-center">
+            <h1 id="username"></h1>
+        </div>
+
+<!-- End Welcome section -->
+
+<!-- Start Loading Screen -->
+<div class="loading-screen">
+  <div class="loader">Loading...</div>
+</div>
+<!-- End Loading Screen -->
+
     <script src="js/jquery-3.5.0.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/index.js"></script>
