@@ -1,0 +1,211 @@
+body {
+    font-family:  cursive;
+    background-color: #fff ;
+    
+}
+
+/* Start Grouped Classes*/
+
+h1,h2,h6,.navbar-brand {
+    font-family: 'Lobster', cursive;
+}
+
+h1,h2 {
+    font-size: 3rem;
+}
+
+h2,h5 {
+    color: 
+    #fbb448;
+}
+
+/* End Grouped Classes*/
+
+/* Start Header Section */
+
+header {
+    background-image: url("../images/hero_slide_1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+}
+
+header .header-info {
+
+    transform: translateY(50%);
+}
+
+header p {
+    background-color: #fbb448;
+    width: 23%;
+    font-size: .9rem;
+    font-weight: 500;
+    padding: 1px;
+    color: #fff;
+} 
+
+nav {
+    background-color: rgba(0,0,0,.5);
+    z-index: 2;
+    border-bottom: 1px solid #ccc;
+}
+
+nav .navbar-brand{
+    font-size: 2rem;
+}
+
+.nav-item .btn-outline-danger {
+    border-color: #fbb448;
+}
+
+.nav-item .btn-outline-danger:hover{
+    background-color: #fbb448;
+}
+
+/* End Header Section */
+
+/* Start Products Section */
+
+.card {
+    overflow: hidden;
+    height: 430px;
+    position: relative;
+}
+
+.card img {
+    transition: transform 1s ease;
+}
+
+.card .img-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    cursor: pointer;
+    display: none;
+}
+
+.card .img-overlay i {
+    transform: translateY(400%);
+}
+
+.card:hover img ,
+.card:hover .card-body {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card:hover .img-overlay {
+    display: block ;
+}
+
+.card-body{
+    padding: 0px 10px 20px 20px !important;
+    position: relative;
+    z-index: 22;
+    transition: transform 1s ease;
+    background-color: #fff;
+}
+
+.card-body::before {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    left: 0;
+    width: 103%;
+    margin-left: -4px;
+    height: 90px;
+    z-index: -1;
+    content: "";
+    background: #fff;
+    transform: rotate(4deg);
+}
+
+/* End Products Section */
+
+/* Start Side Bar Categories */
+
+.side-bar {
+
+    position: absolute;
+    left: -110px;
+    top: 90%;
+    align-items: flex-start;
+    transition: left 1s ease;
+}
+
+.side-bar h6 {
+    color: #fbb448;
+}
+
+.side-bar i {
+    cursor: pointer;
+    color: #fbb448;
+}
+
+.side-bar:hover {
+    left: 0;
+}
+
+.category-menu li {
+    margin-bottom: 5%;
+    background-color: #fbb448;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 1s ease;
+    padding: 5px 2px;
+}
+
+.category-menu li:hover {
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* End Side Bar Categories */
+
+/* Start Light Box */
+
+.lightBox {
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: none;
+}
+
+.lightBox .lightBoxImg {
+    width: 40%;
+    height: 550px;
+    background-color: rgba(0,0,0,.5);
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lightBox .lightBoxImg img {
+
+height: 80%;
+
+}
+
+.lightBoxImg i {
+    cursor: pointer;
+}
+
+.lightBoxImg i.fa-times {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+/* End Light Box */
